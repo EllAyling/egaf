@@ -1,5 +1,6 @@
 ﻿set(EGAF_SRC
 	${PROJECT_SOURCE_DIR}/src/egaf.cpp
+	${PROJECT_SOURCE_DIR}/src/egaf_application.cpp
 )
 
 set(EXTERNAL_HEADERS
@@ -16,7 +17,7 @@ if(BUILD_SHARED_LIBS)
 else()
 	add_library (egaf ${EGAF_SRC})
 endif()
-
+ 
 target_include_directories(egaf PUBLIC
 	${PROJECT_SOURCE_DIR}/include
 	${EXTERNAL_HEADERS}

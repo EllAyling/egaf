@@ -10,7 +10,10 @@ set(VULKAN_LIBS
 )
  
 set(VULKAN_SRC
-	${PROJECT_SOURCE_DIR}/src/vk/vk.cpp
+	${PROJECT_SOURCE_DIR}/src/vk/egaf_vk.cpp
+	${PROJECT_SOURCE_DIR}/src/vk/egaf_vkDevice.cpp
+	${PROJECT_SOURCE_DIR}/src/vk/egaf_vkPhysicalDevice.cpp
+	${PROJECT_SOURCE_DIR}/src/vk/egaf_vkInstance.cpp
 )
 
 target_sources(egaf PRIVATE ${VULKAN_SRC})
